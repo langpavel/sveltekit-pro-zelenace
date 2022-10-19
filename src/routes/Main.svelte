@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { DEFAULT_SHEET_SIZE } from "$lib/sheet-size/SheetSizeSelector.svelte";
+	import { DEFAULT_SHEET_SIZE, SHEET_SIZES } from "$lib/sheet-size/SheetSizeSelector.svelte";
 	import Sheet from "$lib/sheet/Sheet.svelte";
 
     let sheet = {
@@ -15,5 +15,5 @@
     <Sheet bind:sheet />
 
     <pre>{JSON.stringify(sheet, null, 2)}</pre>
-
+    <pre>{JSON.stringify(SHEET_SIZES[sheet.size], null, 2)}</pre>
 </main>

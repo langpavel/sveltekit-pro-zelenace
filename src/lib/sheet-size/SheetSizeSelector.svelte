@@ -1,9 +1,10 @@
 <script lang="ts" context="module">
-	export const DEFAULT_SHEET_SIZE = '7x5cm';
-	export const SHEET_SIZES = {
-		[DEFAULT_SHEET_SIZE]: ['7cm', '5cm'],
+    export type SheetSize = '7x5cm' | '10x6cm';
+	export const SHEET_SIZES: Record<SheetSize, [string, string]> = {
+		'7x5cm': ['7cm', '5cm'],
 		'10x6cm': ['10cm', '6cm']
 	};
+	export const DEFAULT_SHEET_SIZE = '7x5cm' as SheetSize;
 </script>
 
 <script lang="ts">

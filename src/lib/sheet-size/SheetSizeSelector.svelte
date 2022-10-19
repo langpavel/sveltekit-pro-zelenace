@@ -1,6 +1,8 @@
 <script lang="ts" context="module">
+    export type CSSSheetsDimensions = [string, string];
     export type SheetSize = '7x5cm' | '10x6cm';
-	export const SHEET_SIZES: Record<SheetSize, [string, string]> = {
+
+	export const SHEET_SIZES: Record<SheetSize, CSSSheetsDimensions> = {
 		'7x5cm': ['7cm', '5cm'],
 		'10x6cm': ['10cm', '6cm']
 	};

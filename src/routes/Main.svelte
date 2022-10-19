@@ -14,4 +14,6 @@
 
     <Sheet bind:sheet />
 
+    <pre>{JSON.stringify(sheet, null, 2)}</pre>
+
 </main>
